@@ -1,0 +1,168 @@
+Piano83 v2.1                                                    10 August 2001
+============
+for Ion on the TI-83/TI-83+
+
+by Badja
+http://badja.calc.org
+badja@calc.org
+
+
+Bug fixes
+=========
+* Left arrow key now works properly in A minor mode
+
+New features
+============
+* Access to 70 notes (G#1 to F7)
+* Tuning can now be done by octaves
+* Quick one-button access to true-pitch octaves
+* Ability to play two notes simultaneously through separate channels
+
+
+About
+=====
+Piano83 is a progam which turns your TI-83 or TI-83+ into a musical keyboard.
+All you need are earphones or amplified speakers that can plug into the link
+port, or an AM radio. Standard 3.5mm audio plugs will not fit into the 2.5mm
+link port. You will need a 3.5mm-socket to 2.5mm-plug audio adaptor (Cat No.
+P6515 at Dick Smith Electronics, Australian residents). If you use the AM
+radio though, the sound quality will be awful.
+
+
+How to Run
+==========
+Piano83 requires Ion to run.
+
+To run Piano83, make sure Ion is installed on your calculator. Send either
+PIANO83.83P or PIANO83.8XP (for the 83 and 83+ respectively) to your
+calculator and start Ion. Now you can run Piano83.
+
+If you have a TI-83+, you can run Piano83 by entering Asm(prgmPIANO83
+Use the catalog to enter Asm( and the PRGM menu to enter prgmPIANO83.
+
+
+How to Use
+==========
+Run Piano83, then plug in your earphones/speakers or hold your calculator near
+your AM radio's aerial. Tap the 2nd key a few times. You should hear a tone
+whenever the key is pressed. If you cannot hear the tone, please refer to the
+troubleshooting section below.
+
+Now we're ready to start playing. Turn your calculator sideways so that the
+2nd key is nearest you. The progam begins in C major mode. Use the following
+keys to play:
+
+  +----------------- Key to press ----------------+
+  |                   |        |                  |
+  |                   |        |                  |
+  v                   v        v                  v
+
+      +-----------                 +-----------
+  2nd | C  _______             DEL | C  _______
+      +----####### X,T,0,n         +----####### <-
+ALPHA | D  _______            STAT | D  _______
+      +----####### MATRX           +----####### VARS
+ MATH | E                     PRGM | E
+      +-----------                 +-----------
+ X^-1 | F  _______             COS | F  _______
+      +----####### ,               +----####### )
+  X^2 | G  _______               ( | G  _______
+      +----####### 7               +----####### 9
+  LOG | A  _______               8 | A  _______
+      +----####### 4               +----####### 6
+   LN | B                        5 | B
+      +-----------                 +-----------
+STO-> | C  _______               2 | C  _______
+      +----####### 0               +----####### (-)
+ON(83)| D  _______               . | D  _______
+      +----                        +----
+         
+        ^                            ^
+        |                            |
+        +------- Note played --------+
+
+Press the right arrow key to toggle between C major and A minor mode. In A
+minor mode, the 2nd and DEL keys are equivalent to the note A, rather than C.
+These are the keys for A minor mode:
+
+           _______
+      +----####### MODE            +----_______
+  2nd | A  _______             DEL | A  _______
+      +----####### X,T,0,n         +----####### <-
+ALPHA | B                     STAT | B
+      +-----------                 +-----------
+ MATH | C  _______            PRGM | C  _______
+      +----####### SIN             +----####### TAN
+ X^-1 | D  _______             COS | D  _______
+      +----####### ,               +----####### )
+  X^2 | E                        ( | E
+      +-----------                 +-----------
+  LOG | F  _______               8 | F  _______
+      +----####### 4               +----####### 6
+   LN | G  _______               5 | G  _______
+      +----####### 1               +----####### 3
+STO-> | A  _______               2 | A  _______
+      +----####### 0               +----####### (-)
+ON(83)| B                        . | B
+      +-----------                 +-----------
+
+Pressing the up and down arrow keys changes the tuning of the keyboard by a
+semitone at a time. The plus and minus keys tune by octaves. The Y=, WINDOW,
+ZOOM and TRACE keys select different octaves such that the pitches match those
+of a real keyboard.
+
+Now try holding down two keys at once. Both tones should play simultaneously.
+Pressing the ^ key lets you specify how Piano83 plays simultaneous notes. It
+toggles between two chord modes, unison and arpeggio. In arpeggio mode, the
+chord is simulated by playing the tones in a fast arpeggio-like fashion. In
+unison mode, the tones are actually played simultaneously (in separate
+channels), but there is a limit of two notes at a time. If you can't hear both
+notes in unison mode, please refer to the troubleshooting section below.
+
+
+Summary of Keys
+===============
+See the above two figures for which keys play which notes.
+
+Right                 Toggle between C major and A minor modes
+Up/Down               Tune keyboard up or down a semitone
++/-                   Tune keyboard up or down an octave
+Y=/WINDOW/ZOOM/TRACE  Set tuning to an octave with true pitch
+^                     Toggle chord mode between unison and arpeggio
+CLEAR                 Exit Piano83 (unplug earphones/speakers first)
+
+
+Troubleshooting
+===============
+Problem:  I'm using a radio, and I can't hear anything.
+Solution: Make sure the radio is set to AM. Hold down a note (eg. 2nd) and
+          change the tuning until you get a reasonbly clear sound.
+
+Problem:  I've connected speakers through the link port, and I can't hear
+          anything.
+Try this: The speakers must have an amplifier built in to them (ie. a power
+          cord which plugs into a power point or the back of a computer). Make
+          sure the power is on and the volume is turned up. If there's still
+          no sound, refer to the next paragraph.
+
+Problem:  I'm connecting through the link port, but I can't hear anything.
+Solution: The 2.5mm plug may be a bit loose in the link port. Wiggle it around
+          a bit or hold it in different positions. If the sound keeps
+          disappearing, the plug may not be staying in contact with the line 1
+          connector inside the link port. Try changing to arpeggio mode (press
+          the ^ key), which plays the tones through both lines 1 and 2.
+
+Problem:  I'm connecting through the link port, but when I press two notes, I
+          can only hear one tone.
+Solution: The 2.5mm plug is only in contact with one of the connectors inside
+          the link port. Wiggle it around a bit or hold it in different
+          positions. If this doesn't help, change to arpeggio mode (press the
+          ^ key), which simulates chords by rapidly alternating between each 
+          note pressed, playing them through both connectors (lines 1 and 2).
+
+Problem:  My calculator's running incredibly slow.
+Solution: Unplug the earphones or speakers from the link port.
+
+
+
+Send any comments, ideas, or other feedback to badja@calc.org
